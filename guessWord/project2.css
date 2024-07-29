@@ -1,0 +1,33 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background: url(https://bpic.588ku.com/back_our/bg/20201021/bg/b9b2cf5c6c045_431950.jpg)
+    no-repeat center / cover;
+    text-align: center;
+}
+
+#clue,#guess{
+    font-size: 16pt;
+    padding: 6pt;
+}
+
+#begin{
+    margin-top: 15pt;
+}
+
+#clue{
+    margin-bottom: 30pt;
+}
+
+button{
+    font-size: 12pt;
+    padding: 3pt;
+}
