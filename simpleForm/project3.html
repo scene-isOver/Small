@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project3.css">
+    <script src="project3.js"></script>
+    <title>表格</title>
+</head>
+<body>
+    <h1>表格的增删改</h1>
+    <button onclick="addData();">添加数据</button>
+    <table id="table">
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>联系方式</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>男</td>
+            <td>123456789</td>
+            <td>
+                <button onclick="editData(this);">编辑</button><button onclick="deleteData(this);">删除</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
