@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+</body>
+<script src="js/jquery.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+    $.ajax
+    ({
+        type:"get",
+        url:"js/text.txt",
+        dataType:"json",
+        success:function(text)
+        {
+            console.log(text);
+            var ul=$("<ul></ul>");
+            for(var i=0;i<text.length;i++)
+            {
+                var user=text[i];
+                var li="<li>"+user.name+"</li>";
+                ul.append(li);
+            }
+            $("body").append(ul);
+        }
+    });
+</script>
+</html>
